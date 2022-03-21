@@ -4,7 +4,7 @@ from typing import List
 
 import requests as requests
 
-from interrail.data.routes import Trip
+from interrail.data import Trip
 from interrail.data.stations import StopLocation
 
 INTERRAIL_API_URI = "https://api.eurail.com"
