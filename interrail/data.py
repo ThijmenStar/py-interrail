@@ -60,7 +60,7 @@ class Leg:
     dest: Stop
     name: str
 
-    def get_length(self) -> timedelta:
+    def get_duration(self) -> timedelta:
         return self.dest.time - self.origin.time
 
     @classmethod
@@ -83,7 +83,7 @@ class Trip:
 
     legs: List[Leg]
 
-    def get_length(self) -> timedelta:
+    def get_duration(self) -> timedelta:
         return self.dest.time - self.origin.time
 
     @classmethod
