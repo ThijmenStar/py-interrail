@@ -2,10 +2,10 @@ from datetime import datetime
 from json import loads
 from typing import List
 
+
 import requests as requests
 
-from interrail.data import Trip
-from interrail.data.stations import StopLocation
+from interrail.data import StopLocation, Trip
 
 INTERRAIL_API_URI = "https://api.eurail.com"
 LANG = "en"
